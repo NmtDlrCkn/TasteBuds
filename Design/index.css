@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(184, 209, 134);
+    margin: 10px 10px 10px 10px;
+    height: 100%;
+}
+
+nav.navbar{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgb(199, 248, 174);
+    background-color: rgba(245, 245, 245, 0.979) !important;
+    height: 50px;
+    font-weight: 800;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+li.menu{
+    list-style: none;
+    padding-right: 1000px;
+}
+
+ .navMenu{
+    border-style: outset;
+    border-color: bisque;
+    list-style: none;
+    margin-left: 70px;
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+    color: blueviolet;
+ }
+
+.kitchens{
+    border-style: outset;
+    border-color: bisque;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+    color: blueviolet;
+ }
+
+ .healthy{
+    border-style: outset;
+    border-color: bisque;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+    color: blueviolet;
+ }
+
+ .you{
+    border-style: outset;
+    border-color: bisque;
+    list-style: none;
+    margin-right: 70px;
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+    color: blueviolet;
+ }
+
+ /*Front Runner*/
+
+div.front{
+    display:flex;
+    justify-content: center;
+}
+
+nav.frontMain{
+
+    margin-bottom: 80px;
+    margin-top: 60px;
+    box-shadow: 5px 10px 10px rgb(107, 191, 224);
+    background-color: rgba(166, 102, 240, 0.979);
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    font-weight: 900;
+    padding: 0 20px;
+    font-size:x-large;
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+.options1 {
+  width: 100%;
+  margin-left: 4em;
+  margin-bottom: 7em;
+  display: flex;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.f1, .f2, .f3 {
+  height: 200px;
+  width: 260px;
+  border-radius: 15px 15px 15px 15px;
+  border-style: outset;
+  border-color: rgb(107, 77, 243);
+}
+
+
+/*The Bests*/
+
+div.best{
+    display:flex;
+    justify-content: center;
+}
+
+nav.theBest{
+
+    margin-bottom: 80px;
+    margin-top: 60px;
+    box-shadow: 5px 10px 10px rgb(107, 191, 224);
+    background-color: rgba(233, 103, 103, 0.979);
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    font-weight: 900;
+    padding: 0 20px;
+    font-size:x-large;
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* The Best----------------------
+Container for all besties section */
+.besties {
+    justify-content: center;
+    text-align: center; /* Center the section */
+    padding: 20px;      /* Optional: space around content */
+    margin-bottom: 10em;
+}
+
+/* Add left and right margin for each card */
+.besties .card {
+    margin: 0 10px;        /* 10px left and right */
+    background-color: #f8f0e3; /* Example background color */
+    border-radius: 10px;   /* Optional: rounded corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+}
+
+/* Optional: style the title paragraph */
+.card-text, .card-text1 {
+    text-align: justify;
+}
+
+/* Make images responsive and center them */
+.besties .card img {
+    display: block;
+    margin: 0 auto 10px auto; /* Center horizontally + space below */
+    border-radius: 8px;
+}
+
+/*Motif*/
+
+.motifs-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    margin-bottom: 2em;
+}
+
+.motif{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.motif1, .motif2, .motif3{
+    width: 5em;
+    height: 5em;
+}
