@@ -3,6 +3,10 @@ body{
     margin: 10px 10px 10px 10px;
     height: 100%;
 }
+a{
+    text-decoration: none;
+    color: bisque;
+}
 
 nav.navbar{
     margin-bottom: 50px;
@@ -195,4 +199,29 @@ Container for all besties section */
 .motif1, .motif2, .motif3{
     width: 5em;
     height: 5em;
+}
+
+/* Healthy */
+div.health{
+    display:flex;
+    justify-content: center;
+}
+
+nav.healthy{
+    margin-bottom: 80px;
+    margin-top: 60px;
+    box-shadow: 5px 10px 10px rgb(107, 191, 224);
+    background-color: rgba(233, 103, 103, 0.979);
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    font-weight: 900;
+    padding: 0 20px;
+    font-size:x-large;
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
 }
