@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "veliCan",
+      "email": "veliCan@example.com",
+      "name": "Veli",
+      "password": "velican123",
+      "likedRecipes": [1, 3, 5]
+    },
+    {
+      "id": 2,
+      "username": "ali",
+      "email": "ali@example.com",
+      "name": "Ali",
+      "password": "Ali1234",
+      "likedRecipes": [2, 4]
+    }
+  ]
+}
