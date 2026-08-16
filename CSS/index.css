@@ -1,100 +1,85 @@
-body{
+/* Base Theme Styling */
+body {
     background: linear-gradient(
-         135deg,
+        135deg,
         #e4d3fa,
         #cceeff,
         #ccffdd
     );
-    margin: 4em 4em 4em 4em;
-    height: 100%;
-    justify-content: center;
+    margin: 2em 4em 4em 4em;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b2623;
 }
-a{
+
+a {
     text-decoration: none;
-    color: bisque;
+    transition: all 0.3s ease;
 }
 
-nav.navbar{
-    margin-bottom: 50px;
-    margin-top: 30px;
-    box-shadow: 0 4px 6px rgb(199, 248, 174);
-    background-color: rgba(245, 245, 245, 0.979) !important;
-    height: 50px;
-    font-weight: 800;
-    padding: 0 20px;
-
+/* Navbar Styling */
+nav.main-nav {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(199, 248, 174, 0.8);
+    background-color: rgba(245, 245, 245, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 0 30px;
+    height: 60px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+nav.main-nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: blueviolet;
+    letter-spacing: 0.5px;
+}
+
+nav.main-nav .logo a:hover {
+    color: #5c1d24;
+}
+
+ul.nav-links {
+    display: flex;
     gap: 20px;
     list-style: none;
-}
-a.login{
-    font-size:x-large;
-    color: black;
-}
-
-li.menu{
-    list-style: none;
-    padding-right: 1000px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
- .navMenu{
-    border-style: outset;
-    border-color: bisque;
-    list-style: none;
-    margin-left: 70px;
-    color: inherit;
-    text-decoration: none;
-    font-size: large;
+ul.nav-links li a {
+    font-size: 1.05rem;
+    font-weight: 700;
     color: blueviolet;
- }
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
 
-.kitchens{
-    border-style: outset;
+ul.nav-links li a:hover {
     border-color: bisque;
-    list-style: none;
-    color: inherit;
-    text-decoration: none;
-    font-size: large;
+    background-color: rgba(166, 102, 240, 0.15);
+    color: #5c1d24;
+}
+
+a.login {
+    font-size: 1.2rem;
     color: blueviolet;
- }
+}
 
- .healthy{
-    border-style: outset;
-    border-color: bisque;
-    list-style: none;
-    color: inherit;
-    text-decoration: none;
-    font-size: large;
-    color: blueviolet;
- }
-
- .you{
-    border-style: outset;
-    border-color: bisque;
-    list-style: none;
-    margin-right: 70px;
-    color: inherit;
-    text-decoration: none;
-    font-size: large;
-    color: blueviolet;
- }
-
- /*Front Runner*/
-
-div.front{
-    display:flex;
+/* Front Runner & Section Headers */
+div.front, div.best, div.health {
+    display: flex;
     justify-content: center;
 }
 
-nav.frontMain{
-
-    margin-bottom: 80px;
-    margin-top: 60px;
+.frontMain {
+    margin-bottom: 40px;
+    margin-top: 20px;
     box-shadow: 5px 10px 10px rgb(107, 191, 224);
     background-color: rgba(166, 102, 240, 0.979);
     color: bisque;
@@ -102,58 +87,24 @@ nav.frontMain{
     justify-content: center;
     text-align: center;
     align-items: center;
-    list-style: none;
     height: 60px;
     font-weight: 900;
     padding: 0 20px;
-    font-size:x-large;
-    width: 400px;
-    border-radius: 20px 20px 20px 20px;
-    
+    font-size: x-large;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.options1 {
-  display: flex;
-  justify-content: center;
+.frontMain:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 12px 15px rgb(80, 160, 200);
 }
 
-.carousel-inner {
-  max-width: 1000px;
-  width: 100%;
-  padding: 16px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-}
-
-/* Make images responsive */
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-
-  height: 200px;
-  width: 260px;
-  border-radius: 15px 15px 15px 15px;
-  border-style: outset;
-  border-color: rgb(107, 77, 243);
-}
-
-
-
-/*The Bests*/
-
-div.best{
-    display:flex;
-    justify-content: center;
-}
-
-nav.theBest{
-
-    margin-bottom: 80px;
-    margin-top: 60px;
+.theBest {
+    margin-bottom: 40px;
+    margin-top: 40px;
     box-shadow: 5px 10px 10px rgb(107, 191, 224);
     background-color: rgba(233, 103, 103, 0.979);
     color: bisque;
@@ -161,109 +112,232 @@ nav.theBest{
     justify-content: center;
     text-align: center;
     align-items: center;
-    list-style: none;
     height: 60px;
     font-weight: 900;
     padding: 0 20px;
-    font-size:x-large;
-    width: 400px;
-    border-radius: 20px 20px 20px 20px;
+    font-size: x-large;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
-/* The Best----------------------
-Container for all besties section */
-.besties {
+.theBest:hover {
+    transform: translateY(-3px);
+}
+
+/* Gallery / Options Section */
+.options1 {
+    display: flex;
     justify-content: center;
-    text-align: center; /* Center the section */
-    padding: 20px;      /* Optional: space around content */
-    margin-bottom: 10em;
+    margin-bottom: 20px;
 }
 
-/* Add left and right margin for each card */
+.gallery-grid {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgb(107, 77, 243);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(107, 77, 243, 0.3);
+}
+
+/* Besties Section & Cards */
+.besties {
+    margin-bottom: 4em;
+}
+
 .besties .card {
-    margin: 0 10px;        /* 10px left and right */
-    background-color: #f8f0e3; /* Example background color */
-    border-radius: 10px;   /* Optional: rounded corners */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+    background-color: #f8f0e3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid rgba(166, 102, 240, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Optional: style the title paragraph */
-.card-text, .card-text1 {
+.besties .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(107, 77, 243, 0.25);
+}
+
+.besties .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.besties .card img {
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid bisque;
+}
+
+.card-text {
+    color: #4a3e3d;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
-/* Make images responsive and center them */
-.besties .card img {
-    display: block;
-    margin: 0 auto 10px auto; /* Center horizontally + space below */
-    border-radius: 8px;
+/* Custom Buttons */
+.btn-custom {
+    background-color: blueviolet;
+    color: bisque;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px 18px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: auto;
 }
 
-/*Motif*/
+.btn-custom:hover {
+    background-color: #5c1d24;
+    color: bisque;
+    transform: scale(1.03);
+}
 
-.motifs-wrapper{
+/* Motifs Divider */
+.motifs-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    gap: 10px;
-    margin-bottom: 2em;
+    justify-content: center;
+    margin: 3em 0;
 }
 
-.motif{
-    display:flex;
+.motif {
+    display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.motif1, .motif2, .motif3{
-    width: 5em;
-    height: 5em;
-}
-
-/* Healthy */
-div.health{
-    display:flex;
+    gap: 15px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-nav.healthy{
-    margin-bottom: 15rem;
-    margin-top: 60px;
+.motif img {
+    width: 3.5em;
+    height: 3.5em;
+    opacity: 0.85;
+    transition: transform 0.3s ease;
+}
+
+.motif img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Healthy Life Banner */
+.healthy-banner {
+    margin-bottom: 4em;
+    margin-top: 20px;
     box-shadow: 5px 10px 10px rgb(107, 191, 224);
     background-color: rgba(233, 103, 103, 0.979);
-    color: bisque;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    list-style: none;
     height: 60px;
     font-weight: 900;
     padding: 0 20px;
-    font-size:x-large;
-    width: 400px;
-    border-radius: 20px 20px 20px 20px;
-}
-p.free{
-    color: rgb(255, 255, 255);
-    background-color:rgba(241, 8, 8, 0.548) ;
-    text-align: center;
-    margin: 0rem 5rem 0.5rem 5rem;
+    font-size: x-large;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
-
-footer div.connections , li a.contact , li a.mail{
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    color: blueviolet;
-    background-color: rgb(0, 0, 0);
-}
-
-
-div.fM{
-    text-align: center;
+.healthy-banner a {
     color: bisque;
-    background-color: black;
+}
+
+.healthy-banner:hover {
+    transform: scale(1.03);
+}
+
+/* Footer Styling */
+footer.site-footer {
+    margin-top: 3em;
+}
+
+.footer-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+.connections h5 {
+    color: blueviolet;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.footer-links, ul.fM {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a, ul.fM a {
+    color: blueviolet;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.footer-links a:hover, ul.fM a:hover {
+    background-color: rgba(166, 102, 240, 0.15);
+    color: #5c1d24;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin: 1em;
+    }
+    
+    nav.main-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    ul.nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-card {
+        flex-direction: column;
+        text-align: center;
+    }
 }
